@@ -23,7 +23,7 @@ public class TreeAlg {
 
     private static int findUpperBracket(String[] s, int i) {
         for(int j = i + 1; j < s.length; j++){
-            if(findDepth(s[j]) == findDepth(s[i])){
+            if(findDepth(s[j]) <= findDepth(s[i])){
                 return j;
             }
         }
